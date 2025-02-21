@@ -639,13 +639,13 @@ border-radius: 10px;
     margin: 0 auto;
 }
 
-
   
 /* Footer */
 .footer {
     background: #24231D;
-    color: white;
+    color:#A5A49A;
     padding: 50px 0;
+    line-height: 2;
 }
 
 .footer-container {
@@ -693,16 +693,12 @@ border-radius: 10px;
     position: relative;
     padding-left: 20px;
 }
-
-.footer-column ul li::before {
-    content: '\EF53'; /* Leaf icon (Boxicons example) */
-    font-family: 'boxicons';
-    color: white;
-    position: absolute;
-    left: 0;
-    top: 5px;
-    font-size: 12px;
+.footer-column span {
+    font-size: 10px;
+    color: #A5A49A;
 }
+
+
 
 .footer-column p span {
     font-size: 16px;
@@ -753,13 +749,17 @@ border-radius: 10px;
 
 /* Footer Bottom */
 .footer-bottom {
+    color: black;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 5px;
     font-size: 14px;
     color: #bbb;
-    border-top: 1px solid #1F1E17;
+    border-top: 1px solid black;
     display: flex;
     justify-content: center;
+}
+.footer-bottom{
+    padding: px;
 }
 
 .footer-bottom p {
@@ -769,3 +769,6 @@ border-radius: 10px;
 .footer-column input {
     width: 70%;
 }
+
+
+

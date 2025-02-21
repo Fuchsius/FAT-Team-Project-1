@@ -172,7 +172,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
     gap: 40px;
     background-color: #f0f0f0;
     position: relative;
@@ -283,7 +283,7 @@ nav ul li a {
     background-color: #F8F7F0; /* Light grey background */
     padding: 7px;
     text-align: center;
-    height: 150px;
+    height: 200px;
 
 white-space: nowrap;
 align-items: center;
@@ -299,55 +299,134 @@ justify-content: center;
 
 
 
+
+.hero {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero {
+    font-family: Arial, sans-serif;
+}
 .hero {
     position: relative;
-    text-align: center;
-    color: white;
-}
-
-.hero img {
     width: 100%;
-    display: block;
+    height: 640px; /* Adjusted height */
+    overflow: hidden;
 }
-
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     /* Semi-transparent overlay */
+}
 .hero-content {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%; /* Adjust width for responsiveness */
+    left: 15%;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+    z-index: 2;
 }
-
-.hero h1 {
-    font-size: 2.5em; /* Adjust font size */
+.hero-content h2 {
+    font-size: 50px;
+    font-family: Manrope, sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
+    line-height: 84px;
 }
-
 .play-button {
-    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 24%;
+    transform: translateY(-50%);
+    background: white;
     color: black;
+    font-size: 35px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.play-button:hover {
+    transform: scale(1.1);
+}
+.watch-video {
+    position: absolute;
+    
+    top: 60%;
+    right: 25%;
+    
+    text-decoration: none;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 25px;
+    color: #EEC044;
+
+
+
+
+}
+.image-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
-    cursor: pointer;
+    margin-top: -50px; /* Overlapping hero section */
+    gap: 20px;
+}
+.image-box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.image-label {
+    position: absolute;
+    top: 1px; /* Slightly overlaps hero section */
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.play-button::before {
-    content: "";
-    border-style: solid;
-    border-width: 10px 0 10px 15px;
-    border-color: transparent transparent transparent black;
-}
 
-.watch-video {
-    font-size: 0.8em;
-    color: white;
-    text-decoration: underline;
-}
+
+
+
+
+
+
+
+
+
+
+
 .info-section {
     padding: 50px 20px;
 }
@@ -397,54 +476,198 @@ justify-content: center;
     border-radius: 5px;
 }
 
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+.info-left {
+    position: relative;
+}
+.info-left .circle {
+    position: absolute;
+    width: 320px;
+    height: 350px;
+    background: #F8F7F0;
+    border-radius: 50%;
+    top: 50%;
+    left: 1%;
+    transform: translate(-50%, -50%);
+}
+.info-left img {
+    position: relative;
+    width: 390px;
+    height: 455px;
+    border-radius: 4px;
+}
+.info-right {
+    text-align: left;
+    max-width: 500px;
+}
+.info-right h3 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 20px;
+    color: #EEC044;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 0.6px;
+}
+.info-right h2 {
+    font-size: 35px;
+    font-family: Manrope;
 
+    font-weight: 800;
+    margin: 10px 0;
+}
+.info-right p {
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+    margin-bottom: 15px;
+    
+}
+.features {
+    display: flex;
+    gap: 20px;
+}
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* White Background Before Footer */
-.white-background {
-    background-color: #F8F7F0;
-    padding: 120px 0;
+    /* font-size: 50px; */
+    text-align: center;
+    background: #f3f3f3;
+    padding: 15px;
+    border-radius: 4px;
+    width: 80px;
+    height: 90px;
+}
+.feature-box i {
+    font-size: 40px; /* Increase icon size */
+    margin-bottom: 15px;
+}
+.feature-box span {
+    font-size: 14px; /* Keep text small */
+    font-weight: bold;
 }
 
-.white-background-container {
-    max-width: 1100px;
-    margin: 0 auto;
+
+
+
+
+.feature-box.green { background: #4BAF47; color: #FFFFFF; }
+.feature-box.yellow { background: #C5CE38; color: #FFFFFF; }
+.feature-box.orange { background: #EEC044; color: #FFFFFF; }
+ 
+
+
+  /* Green Background Before Footer */
+  .green-background {
+    background-color: #4BAF47;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px;
+    color: white;
+    min-height: 150px;
 }
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+    margin-left: 200px;
+}
+
+.text-content h4 {
+    
+    font-size: 20px;
+    font-family: Covered By Your Grace;
+    font-weight: 200;
+    color: #EEC044; /* Light orange */
+    margin: 0;
+    line-height: 45px;
+    
+}
+
+.text-content h2 {
+    position: absolute;
+    z-index: 2;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Manrope;
+    margin: 10px 0;
+    color: #FFFFFF;
+    line-height: 48px;
+}
+
+.green-house {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 100%;
+}
+
+.green-house img {
+    height: 100%;
+    width: auto;
+}
+
+.discover-btn {
+    position: absolute;
+    left: 1000px;
+    
+    background-color: #FDCB58;
+    color: black;
+    padding: 10px 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
 /* Footer */
 .footer {
     background: #24231D;
-    color: white;
+    color:#A5A49A;
     padding: 50px 0;
+    line-height: 2;
 }
 
 .footer-container {
@@ -492,16 +715,12 @@ justify-content: center;
     position: relative;
     padding-left: 20px;
 }
-
-.footer-column ul li::before {
-    content: '\EF53'; /* Leaf icon (Boxicons example) */
-    font-family: 'boxicons';
-    color: white;
-    position: absolute;
-    left: 0;
-    top: 5px;
-    font-size: 12px;
+.footer-column span {
+    font-size: 10px;
+    color: #A5A49A;
 }
+
+
 
 .footer-column p span {
     font-size: 16px;
@@ -556,9 +775,12 @@ justify-content: center;
     padding-top: 20px;
     font-size: 14px;
     color: #bbb;
-    border-top: 1px solid #1F1E17;
+    border-top: 1px solid black;
     display: flex;
     justify-content: center;
+}
+.footer-bottom{
+    padding: px;
 }
 
 .footer-bottom p {
