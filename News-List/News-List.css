@@ -630,3 +630,149 @@
     cursor: pointer;
     color: white;
 }
+
+
+
+@media (max-width: 992px) {
+    /* Navigation */
+    .nav-container {
+        padding: 0 15px;
+    }
+
+    .nav-container-logo {
+        width: 100%;
+        max-width: 150px;
+    }
+    .logo img{
+        max-height: 35.4px;
+    }
+    .right-elements{
+        margin-right: 36px;
+    }
+    .center-elements{
+        padding: 0;
+    }
+    .center-elements ul {
+        gap: 15px;
+    }
+
+    /* Header */
+    .header-img{
+        margin-top: -11.8px;
+    }
+    .header-img h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-container {
+        padding: 0 10px;
+    }
+
+    .nav-container-logo {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    .logo img {
+        max-height: 30px;
+    }
+
+    .right-elements {
+        margin-right: 30px;
+    }
+
+    .center-elements {
+        padding: 0;
+        flex-direction: row;
+    }
+
+    .center-elements ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .search-icon i{
+        font-size: 30.4px;
+    }
+
+    /* Header */
+    .header-img {
+        margin-top: -9.8px;
+    }
+
+    .header-img h1 {
+        font-size: 2rem;
+    }
+
+    .header-img h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Navigation */
+    .nav-container {
+        padding: 0 8px;
+    }
+
+    .nav-container-logo {
+        width: 100%;
+        max-width: 100px;
+    }
+
+    .logo img {
+        max-height: 25px;
+    }
+
+    .right-elements {
+        margin-right: 15px;
+    }
+
+    .center-elements {
+        padding: 0;
+        flex-direction: row;
+    }
+
+    .center-elements ul {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .search-icon i {
+        font-size: 20.2px;
+    }
+
+    /* Header */
+    .header-img {
+        margin-top: -7.4px;
+    }
+
+    .header-img h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-img h3 {
+        font-size: 0.875rem;
+    }
+    .footer-section-container-logo img{
+        max-width: 113.4px;
+    }
+    .footer-section-social-icon{
+        gap: 13px;
+    }
+    .footer-section-container-contact-element p{
+        font-size: 11.2px;
+    }
+    .footer-section-container-contact-element input{
+        font-size: 6.2px;
+    }
+    .footer-section-container-contact-element-btn i{
+        margin-right: -5.0px;
+        margin-left: -9.4px;
+    }
+}
