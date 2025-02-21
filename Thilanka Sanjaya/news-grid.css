@@ -160,60 +160,120 @@ nav ul li a {
     height: 100%;
     object-fit: cover;
 }
-.image-grid-section {
-    width: 100%;
-    margin-top: 50px; /* Adds space after the header */
-}
-
 .custom-div {
     width: 100%;
     max-width: 1170px;
-    height: 1170px;
-    margin: 0 auto;
-    background-color: #f0f0f0; /* Optional background color */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
 }
-.image-grid {
+
+
+.right-section {
+    width: 75%;
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+.cards-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
-    gap: 10px; /* Space between images */
-    height: 100%;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid black;
 }
 
-.grid-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the images cover the area without distortion */
-    border-radius: 8px; /* Optional, adds rounded corners */
-}
-/* Responsive design for smaller screens */
-@media (max-width: 1200px) {
-    .image-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    }
-}
-
-@media (max-width: 900px) {
-    .image-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    }
-    .grid-image {
-        width: 100%;
-        height: auto; /* Adjust height for responsiveness */
-    }
-}
-
-@media (max-width: 600px) {
-    .image-grid {
-        grid-template-columns: 1fr; /* 1 column */
-    }
-    .grid-image {
-        width: 100%;
-        height: auto; /* Adjust height for responsiveness */
-    }
+.card {
+    width: 370px; /* Updated width */
+    height: 514px; /* Updated height */
+    border-radius: 10px; /* Border radius remains the same */
+    overflow: hidden;
+    background-color: #fff;
+    padding: 15px;
 }
 
 
+.card-image {
+    width: 370px;
+    height: 299.14px;
+    object-fit: cover;
+    border-top-left-radius: 10px; /* Rounded top-left corner */
+    border-top-right-radius: 10px;
+}
 
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #878680;
+    margin-top: 10px;
+}
+
+.Username {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #878680;
+    align-items: center;
+    
+}
+
+.Comments {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #878680;
+    line-height: 20px;
+    align-items: center;
+}
+
+.tit{
+    text-align: center;
+    font-family:  'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;
+
+}
+
+@media (max-width: 768px) {
+    .custom-div {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .cards-section {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    }
+
+    .card {
+        width: 100%; /* Make the cards take full width of their container */
+    }
+}
+
+/* Responsive styles for very small screens (mobile devices) */
+@media (max-width: 480px) {
+    .custom-div {
+        padding: 5px; /* Further reduce padding for smaller screens */
+    }
+
+    .cards-section {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .card {
+        width: 100%; /* Make the cards take full width of their container */
+    }
+}
 
 .footer {
     background: #1e1e1e;

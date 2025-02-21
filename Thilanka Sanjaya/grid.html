@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./shop.css">
+    <link rel="stylesheet" type="text/css" href="./grid.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
+        <!-- Multi-color line section -->
         <section class="multi-color-line">
             <div class="color-section cl1"></div>
             <div class="color-section cl2"></div>
             <div class="color-section cl3"></div>
         </section>
+
+        <!-- Header Section -->
         <header>
             <div class="top-bar">
                 <div class="logo">
                     <img src="assets/logo.png" alt="Agrios Logo">
-
                 </div>
                 <div class="social-icons">
                     <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -40,42 +42,39 @@
             <div class="top-banner">
                 <img src="assets/line.png" alt="Transparent Banner" class="top-image">
                 <nav>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li class="search-cart">
-                                <a href="#"><i class='bx bx-search-alt-2'></i></a>
-                                <a href="#"><i class='bx bx-cart'></i> <span class="cart-badge">0</span></a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li class="search-cart">
+                            <a href="#"><i class='bx bx-search-alt-2'></i></a>
+                            <a href="#"><i class='bx bx-cart'></i> <span class="cart-badge">0</span></a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
             <div class="title">
                 <img src="./assets/title.png" alt="title">
             </div>
-
         </header>
 
-
-
-        <div class="custom-div">
-            <div class="image-grid">
-                <img src="./assets/div.cbp-item-wrapper.png" alt="Image 1" class="grid-image">
-                <img src="./assets/div.cbp-item-wrapper-1.png" alt="Image 2" class="grid-image">
-                <img src="./assets/div.cbp-item-wrapper-2.png" alt="Image 3" class="grid-image">
-                <img src="./assets/div.cbp-item-wrapper-3.png" alt="Image 4" class="grid-image">
-                <img src="./assets/div.master-project.png" alt="Image 5" class="grid-image">
-                <img src="./assets/div.cbp-item-wrapper.png" alt="Image 6" class="grid-image">
+        <!-- Image Grid Section -->
+        <section class="image-grid-section">
+            <div class="custom-div">
+                <div class="image-grid">
+                    <img src="./assets/div.cbp-item-wrapper.png" alt="Image 1" class="grid-image">
+                    <img src="./assets/div.cbp-item-wrapper-1.png" alt="Image 2" class="grid-image">
+                    <img src="./assets/div.cbp-item-wrapper-2.png" alt="Image 3" class="grid-image">
+                    <img src="./assets/div.cbp-item-wrapper-3.png" alt="Image 4" class="grid-image">
+                    <img src="./assets/div.master-project.png" alt="Image 5" class="grid-image">
+                    <img src="./assets/div.cbp-item-wrapper.png" alt="Image 6" class="grid-image">
+                </div>
             </div>
-        </div>
-        
+        </section>
 
         <!-- Footer Section -->
         <footer class="footer">
@@ -128,7 +127,7 @@
                 <p>Terms of Use | Privacy Policy</p>
             </div>
         </footer>
-
+    </div>
 
 </body>
 
