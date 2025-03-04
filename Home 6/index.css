@@ -1,0 +1,1351 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #154734;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 150px;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.header-info i {
+    font-size: 20px;
+    
+
+}
+
+.header-info img {
+    width: 20px;
+    height: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.separator {
+    width: 0.1px;
+    height: 50px;
+    background: rgb(113, 111, 111);
+}
+.header-info p {
+    font-size: 11px;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    font-weight: bold;
+}
+.header-info span {
+    font-size: 16px;
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Adjust height, e.g., 60% of viewport height */
+    background: url('image1.png') center/cover; /* Set background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section img {
+    display: none; /* Hide the img tag since the background is used */
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .separator {
+        width: 80%;
+        height: 2px;
+    }
+}
+
+/*content section*/
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 40px;
+}
+.content-box {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: left;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.content-box h3 {
+    font-style: italic;
+    color: #2E8B57;
+}
+.content-box h1 {
+    font-size: 42px;
+    margin-top: 10px;
+}
+.content-box p {
+    margin-top: 20px;
+    line-height: 1.7;
+    font-size: 14px;
+    color: #333;
+}
+
+.story-button {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.play-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #2E8B57;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.corner-image {
+    position: absolute;
+    bottom: 5px;
+    right: 1px;
+    width: 150px;
+    height: auto;
+}
+.icons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #ffffff, #d3d3d3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-item span {
+    margin-top: 10px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/*srore section*/
+.store-section {
+    background: url('image3.jpeg') no-repeat center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: left;
+    padding: 20px;
+}
+
+.store-content {
+    max-width: 600px;
+    padding: 20px;
+    margin-left: -90px;
+    border-radius: 7px;
+}
+
+.store-content h1 span {
+    color: green;
+    font-size: 40px;
+}
+.store-content h1 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+.store-content p {
+    font-size: 14px;
+    color: rgb(16, 15, 15);
+    
+    line-height: 1.8;
+}
+
+.badge {
+    position: absolute;
+    top:-5px;
+    left: 40px;
+    background: #FFC107;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.badge span {
+    display: block;
+    font-size: 14px;
+}
+
+.btn {
+    background: #264728;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Promo Section */
+.promo-section {
+    padding: 40px;
+}
+
+.promo-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.promo-box {
+    position: relative;
+    background: #2E7D32;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 400px;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* Ribbon (White Banner) */
+.ribbon {
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 8px;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius: 3px;
+    position: relative;
+}
+
+.ribbon::before, .ribbon::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: white transparent transparent transparent;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.promo-box img {
+    width: 70%; 
+    display: block;
+    margin: 50px auto; /* Reduce margin for better spacing */
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+
+/* Button */
+.ribbon-button {
+    background: #FFC107;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    position: absolute; /* Absolute to place inside image */
+    bottom: 300px; /* Adjust this based on where you want it */
+    left: 50%; /* Center it */
+    transform: translateX(-50%); /* Proper centering */
+    border-radius: 3px;
+    text-align: center;
+    
+}
+
+.benefits {
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center; /* Align items vertically */
+    gap: 50px; /* Adjust space between items */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    padding: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    gap: 15px; /* Space between image and text */
+}
+
+.benefit-item img {
+    width: 50px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.benefit-text {
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+    color: #666; /* Optional: Adjust text color */
+}
+
+.cards {
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+}
+
+.card {
+    background: white;
+    border: #e7e6e6 1px solid;
+    padding: 65px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100px;
+}
+
+.sale-badge {
+    background: linear-gradient(to right, #185f36, #e6fa2e);
+    color: white;
+    padding: 9px 15px;
+    border-radius: 16px;
+    font-size: 12px;
+    
+}
+
+.price {
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.new-price {
+    color: green;
+}
+
+.btn-add {
+    background: #2E7D32;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .promo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Featured Products Section */
+.featured-products {
+    text-align: center;
+    padding: 50px 30px;
+    background: #EDF3EC;
+}
+
+/* Title Styling */
+.sub-title {
+    color: #6DA36F;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.main-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Product Card */
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Sale Badge */
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(to right, #185f36, #e6fa2e);
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+/* Product Image */
+.product-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Category */
+.category {
+    font-size: 12px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+/* Product Name */
+h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Prices */
+.price {
+    font-size: 16px;
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+.old-price {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.new-price {
+    font-size: 16px;
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background: none;
+    border: 2px solid #FFD700;
+    color: black;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.add-to-cart i {
+    color: black;
+}
+
+.add-to-cart:hover {
+    background: #FFD700;
+    color: black;
+}
+
+
+/*farm section*/
+.farm-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.farm-image {
+    width: 105%;
+    height: 105%;
+    
+}
+
+.farm-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.farm-content {
+    width: 115%;
+    height: 115%;
+    background-color: #4CAF50; /* Green box */
+    padding: 50px;
+    color: white;
+}
+
+.farm-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.farm-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.progress-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 6px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.progress-hidden-images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: -40px; 
+    margin-left: 620px;
+}
+
+.inside-progress {
+    width: 80px;
+    height: auto;
+    clip-path: inset(50% 0 0 0); /* Hides upper half */
+    position: relative;
+    z-index: 1; /* Stays inside progress container */
+}
+
+/* --- Floating Image Above Farm & Shop Sections --- */
+.floating-container {
+    text-align: center;
+    margin-top: -150px;
+    width: 25%;
+    height: 30%;
+    margin-left: 1130px;
+}
+
+.floating-image {
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+   
+}
+
+/* --- Header Below Floating Image --- */
+.section-header {
+    text-align: center;
+    background-color: white;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2; /* Above hidden images */
+}
+
+/* --- Two Images Partially Hidden Under Header --- */
+.header-hidden-images {
+    position: relative;
+    text-align: center;
+    margin-top: -40px; /* Moves under the header */
+}
+
+.under-header {
+    width: 100px;
+    opacity: 0.7;
+    position: relative;
+    z-index: 1; /* Behind the header */
+    clip-path: inset(0 0 50% 0); /* Hides upper half */
+}
+
+/* shop Section Styles */
+.shop-section {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+
+/* Grid Layout */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* Product Card */
+.shop-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.shop-card img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Category Text */
+.category {
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/* Product Name */
+.shop-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Price */
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 5px;
+}
+
+.new-price {
+    color: green;
+    font-weight: bold;
+}
+
+/* Sale Badge */
+.sale-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 2px solid orange;
+    border-radius: 25px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+    background: orange;
+    color: white;
+}
+
+.cart-icon {
+    width: 14px;
+    height: 14px;
+    background: url('cart-icon.png') no-repeat center;
+    background-size: contain;
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shop-card {
+        padding: 15px;
+    }
+
+    .shop-card h3 {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+}
+
+
+/* review Section Styling */
+.testimonial-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ecf0ec;
+    position: relative;
+}
+.testimonial-decoration {
+    position: absolute;
+    top: 200px; /* Adjust to place under the card */
+    left: 50%;
+    transform: translateX(-50%); /* Center the image */
+    z-index: 0; /* Ensure it's below the card */
+    width: 160%; /* Adjust width as needed */
+    max-width: 1000px; /* Prevent it from being too big */
+    opacity: 0.3; /* Light effect */
+}
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    margin-bottom: 10px; /* Space between cards */
+}
+
+/* Review Title */
+.review-title {
+    font-size: 14px;
+    color: #6ca16e;
+    font-style: italic;
+}
+
+/* Section Heading */
+.section-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Testimonial Card */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Stars */
+.stars {
+    font-size: 18px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Author Info */
+.author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.avatar img {
+    width: 100%;
+    height: auto;
+}
+
+/* Author Name */
+.author-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Author Role */
+.author-role {
+    font-size: 14px;
+    color: #6ca16e;
+    text-transform: uppercase;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #6ca16e;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .testimonial-card {
+        padding: 25px;
+    }
+
+    .section-heading {
+        font-size: 24px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+    }
+
+    .author-name {
+        font-size: 16px;
+    }
+}
+
+
+/* Blog Section  */
+.blog-section {
+    text-align: center;
+    padding: 50px 5%;
+}
+
+.blog-subtitle {
+    color: green;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.blog-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Blog Container */
+.blog-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Large Blog Card */
+.blog-card.large {
+    position: relative;
+    max-width: 550px;
+    flex: 2;
+    height: 350px; /* Increase height */
+    overflow: hidden;
+    border-radius: 8px;
+    background-image: url('image\ 21.jpeg'); /* Set the first image as a background */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Dark Overlay */
+.blog-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark transparent overlay */
+}
+
+/* Content Inside Image */
+.blog-content.inside {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-align: left;
+    max-width: 80%;
+}
+
+.blog-content.inside h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-content.inside p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.blog-content.inside .blog-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Small Blog Cards */
+.blog-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    max-width: 350px;
+    flex: 1;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.blog-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.blog-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Blog Date Styling */
+.blog-date {
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    margin: -20px 10px 5px;
+    margin-right: 260px;
+   
+}
+
+/* Yellow background for the date number */
+.date-number {
+    background-color: #e6b800;  /* Yellow */
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+/* Green background for the month and year */
+.date-month {
+    background-color: #2b8c45;  /* Green */
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-card.large {
+        max-width: 100%;
+        height: 350px;
+    }
+
+    .blog-card {
+        max-width: 100%;
+    }
+}
+
+
+
+/* Footer  */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 70px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* Footer Content Grid */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+/* Footer About Section */
+.footer-about {
+    max-width: 250px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.footer-about p {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #3FAF47;
+}
+.explore-section ul {
+    list-style: none;
+    padding: 0;
+}
+/* Leaf Icon Before Links */
+.explore-section ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.explore-section ul li i {
+    color: #f8fbf8;
+    font-size: 14px;
+}
+
+.explore-section a {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.explore-section ul li a:hover {
+    color: #3FAF47;
+}
+
+/* Footer Titles with Underline */
+.footer-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #edf4ee;
+    position: relative;
+}
+
+.footer-title::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #3FAF47;
+    margin-top: 5px;
+}
+
+/* Footer Sections */
+.footer-section {
+    margin-bottom: 10px;
+}
+.footer-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Adds space below title */
+}
+
+/* News List Styling */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 20px; /* Increases spacing between news items */
+}
+
+/* News Title (Link) Styling */
+.footer-section li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Ensures the title appears above the date */
+}
+
+/* News Date Styling */
+.footer-section li span {
+    display: block; /* Moves the date below the title */
+    font-size: 14px;
+    color: #f4ce70; /* Light gray for a subtle effect */
+    margin-top: 5px; /* Adds spacing between title and date */
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust spacing between list items */
+    
+}
+
+.contact-info li {
+    display: flex;
+    align-items: baseline;
+    gap: 10px; /* Proper spacing between icon and text */
+    font-size: 16px;
+    color: #ddd;
+}
+
+.contact-info i {
+    color: #3FAF47;
+    font-size: 18px;
+}
+
+.contact-info i.fa-phone-alt {
+    transform: scaleX(-1);
+}
+
+/* Newsletter Section */
+.newsletter {
+    display: flex;
+    margin-top: 15px; /* Increase gap between contact info and newsletter */
+    max-width: 350px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+}
+
+.newsletter button {
+    background: #3FAF47;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter button i {
+    font-size: 18px;
+}
+
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background: #0d0d0d;
+    font-size: 12px;
+    margin-bottom: -70px;
+}
+
+.footer-bottom .footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.footer-bottom .footer-links a:hover {
+    color: #3FAF47;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter input {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter button {
+        border-radius: 5px;
+    }
+}
