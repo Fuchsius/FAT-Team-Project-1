@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Insert</title>
+</head>
+<body>
+    <div id="auth-status"></div>
+    <form action="insert.php" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+    // Check authentication status
+    function checkAuth() {
+        const token = localStorage.getItem('auth_token');
+        if (!token) {
+            window.location.href = 'login.php';
+            return;
+        }
+        document.getElementById('auth-status').textContent = 'Authenticated';
+    }
+
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const token = localStorage.getItem('auth_token');
+        fetch('insert.php', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${token}`
+            },
+            body: new FormData(this)
+        })
+        .then(response => {
+            if (response.status === 401) {
+                window.location.href = 'login.php';
+                throw new Error('Unauthorized');
+            }
+            return response.json();
+        })
+        .then(data => {
+            document.getElementById('result').textContent = data.message;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('result').textContent = 'An error occurred';
+        });
+    });
+
+    // Check auth on page load
+    checkAuth();
+    </script>
+</body>
+</html>
